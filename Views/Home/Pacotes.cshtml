@@ -1,0 +1,53 @@
+@model List<PacotesTuristicos>
+<body class="vitrine">
+
+    <ul>
+
+        <li class="index"><a  asp-action="Index">Destino Certo</a></li>
+        <li class="index"><a asp-action="DescricaoPacotes2">Descrição dos Pacotes</a></li>
+        <li class="index"><a asp-action="LocaisInclusos2">Locais inclusos</a></li>
+        <li class="index"><a asp-action="Pacotes">Pacotes</a></li>
+        <li class="index"><a asp-action="Registrar">Registrar</a></li>
+        <li class="index"><a asp-action="Login">Login</a></li>
+        
+
+
+    </ul>
+
+    <center><h2 class="text">Pacotes Cadastrados</h2></center>
+    
+    <center>
+        <table>       
+            <thead>
+                <tr>
+                    <th>Nome</th>    
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Atrativos</th>
+                    <th>Saida</th>
+                    <th>Retorno</th>
+                    <th>Usuario</th>
+
+                </tr>
+            </thead>
+        
+        @foreach(PacotesTuristicos pacotes in Model){
+
+        
+            <tbody>
+            <tr>
+                <td>@pacotes.Nome</td>
+                <td>@pacotes.Origem</td>
+                <td>@pacotes.Destino</td>
+                <td>@pacotes.Atrativos</td>
+                <td>@pacotes.Saida</td>
+                <td>@pacotes.Retorno</td>
+                <td>@pacotes.Usuario</td>
+            </tr>
+            </tbody>
+        
+    }</table>
+    </center>
+    <br><br><br><br>
+</body>
+<br><br><br><br>

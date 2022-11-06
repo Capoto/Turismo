@@ -1,0 +1,473 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+input.delete{
+
+  border: none;
+  background-color: transparent;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #23242a;
+}
+body.vitrine {
+  margin: 0;
+  width: 100%;
+  background-color: white;
+}
+
+div.login {
+
+  width: 400px;
+  height: 400px;
+  background-color: #28292d;
+  color:blue;
+  border-radius: 10%;
+  font-size: 20px;
+  font-family: cursive;
+  border-style: solid;
+  border-color:  blue;
+ 
+}
+
+div.index {
+
+  width: 500px;
+  height: 500px;
+  background-color: #28292d;
+  color:blue;
+  border-radius: 10%;
+  font-size: 20px;
+  font-family: cursive;
+  border-style: solid;
+  border-color:  blue;
+
+}
+
+div.pacotes {
+
+  width: 700px;
+  height: 700px;
+  color:blue;
+  border-radius: 10%;
+  font-size: 20px;
+  font-family: cursive;
+  border-style: solid;
+  
+
+  background: rgba( 0, 0, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+
+div.footer {
+
+  text-align: center;
+  background-color: #28292d;
+  color: white;
+  font-size: 24px;
+}
+
+button.login {
+
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-family: cursive;
+  color : white;
+  border: none;
+}
+
+button.login2 {
+
+  background-color: blue;
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  font-family: cursive;
+  color : white;
+  border: none;
+}
+
+button.login3 {
+
+  background-color: blue;
+  width: 240px;
+  height: 40px;
+  cursor: pointer;
+  font-family: cursive;
+  color : white;
+  border: none;
+}
+
+
+a.fale {
+
+  font-family: cursive;
+  cursor: pointer;
+  color: black;
+}
+
+a.fale2 {
+  font-size: 40px;
+  font-family: cursive;
+  cursor: pointer;
+  color: black;
+}
+button.mess{
+  border: none;
+  background-color: transparent;
+}
+button.mes {
+
+  background-color: blue;
+  width: 400px;
+  height: 40px;
+  cursor: pointer;
+  font-family: cursive;
+  color : white;
+  border: none;
+  margin-left: 170px;
+}
+
+
+label{
+  display: inline-block;
+  font-size: 24px;
+  width: 80px;
+  text-align: left;
+  font-family: cursive;
+  
+}
+
+label.index{
+  display: inline-block;
+  font-size: 24px;
+  width: 160px;
+  text-align: left;
+  font-family: cursive;
+  
+}
+
+label.fale{
+  display: inline-block;
+  font-size: 24px;
+  width: 160px;
+  text-align: left;
+  font-family: cursive;
+  color: blue;
+}
+
+
+
+label.cadastro{
+  display: inline-block;
+  font-size: 24px;
+  width: 200px;
+  text-align: left;
+  font-family: cursive;
+  
+}
+
+input{
+
+  display: inline-block;
+  margin-left: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+select{
+
+  display: inline-block;
+  margin-left: 10px;
+  width: 200px;
+  height: 40px;
+
+}
+
+input.fale1{
+
+  display: inline-block;
+  margin-left: 10px;
+  width: 400px;
+}
+
+input.fale{
+
+  display: inline-block;
+  margin-left: 10px;
+  width: 400px;
+  height: 400px
+ 
+}
+
+
+a {
+
+  color: white;
+ 
+}
+
+a.space {
+
+  margin-left: 20px;;
+  color: white;
+ 
+}
+
+a.space2 {
+
+  margin-left: 80px;;
+  color: white;
+ 
+}
+
+a:hover{
+color: blue;
+}
+
+ul {
+  margin: 0;
+  background-color: #23242a;
+  overflow: auto;
+  height: 60px;
+}
+
+li {
+  float: left;
+  width:20%;
+  cursor: pointer;
+  font-family: cursive;
+  color: white;
+  font-size: 24px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center; 
+  transition: all 0.3s ease;
+}
+
+
+
+li.index {
+  float: left;
+  width: 16.66666666%;
+  cursor: pointer;
+  font-family: cursive;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center; 
+  transition: all 0.3s ease;
+}
+
+
+
+h2.text {
+
+  font-size: 40px;
+  color: blue;
+}
+
+h2.text2 {
+
+  font-size: 40px;
+  color: blue;
+  margin-left: 160px;
+}
+
+
+h3.text {
+
+  font-size: 40px;
+  color: blue;
+}
+
+
+
+p.organize {
+
+  font-size: 24px;
+  margin-left: 420px;
+  margin-right: 420px;
+  text-align: justify;
+}
+
+img.airplane {
+
+
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  height: 100px;
+  animation: airplane 6s linear infinite;
+
+}
+
+@keyframes airplane{
+
+  0%{
+    transform:rotate(0deg)
+    translate(-165px)
+    rotate(0deg);
+              
+  
+  }
+  100%{
+    transform:rotate(360deg)
+            translate(-165px)
+            rotate(0deg);
+  }
+  
+}
+
+
+img.airplane2 {
+
+
+  top: 45%;
+  right: 10%;
+  position: absolute;
+  height: 100px;
+  animation: airplane 6s linear infinite;
+
+}
+
+@keyframes airplane2{
+
+  0%{
+    transform:rotate(0deg)
+    translate(-165px)
+    rotate(0deg);
+              
+  
+  }
+  100%{
+    transform:rotate(360deg)
+            translate(-165px)
+            rotate(0deg);
+  }
+  
+
+}
+
+table{
+  border-style:  solid;
+  
+  
+}
+thead {
+
+  color: white;
+  background-color: blue;
+  
+}
+th,td {
+
+  padding: 15px;
+  border: 1px solid black;
+  font-family: cursive;
+
+}
+
+p.hei{
+
+  color: white;
+}
+
+
+h1 {
+
+  font-family: cursive;
+  font-size: 30px; 
+}

@@ -1,0 +1,43 @@
+@using Microsoft.AspNetCore.Http
+@model FaleConosco
+<body class="vitrine">
+
+    <ul>
+
+      
+        <li><a  asp-action="DestinoCerto">Destino Certo</a></li>
+        <li><a asp-action="CadastraPacotes">Cadastrar Pacote</a></li>
+        <li><a asp-action="EditaPacotes2">Edita Pacotes</a></li>
+        <li><a asp-action="ExcluirPacotes2">Excluir inclusos</a></li>
+        <li><a asp-action="FaleConosco">Fale Conosco</a></li>
+
+    </ul>
+
+    <center><h2 class="text2" >Fale Conosco</h2></center>
+
+    <center>
+    <form method="Post">
+
+        <label class="fale">Nome:</label>
+        <input type="text" class="fale1" asp-for="Nome" required></input>
+        <br><br>
+
+        <label class="fale">Email:</label>
+        <input type="text" class="fale1" asp-for="Email" required></input>
+        <br><br>
+
+        <label class="fale">Mensagem:</label>
+        <input type="text" class="fale" asp-for="Mensagem" required></input>
+        <br><br><br>
+
+        <button class="mes" >Enviar</button>
+        <br><br>
+
+    </form>
+    </center>
+
+   
+
+
+</body>
+<br><br><br><br><br><br>

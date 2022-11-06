@@ -1,0 +1,58 @@
+@model PacotesTuristicos
+
+<body class="vitrine">
+
+    <ul>
+
+        <li><a  asp-action="DestinoCerto">Destino Certo</a></li>
+        <li><a asp-action="CadastraPacotes">Cadastrar Pacote</a></li>
+        <li><a asp-action="EditaPacotes2">Edita Pacotes</a></li>
+        <li><a asp-action="ExcluirPacotes2">Excluir inclusos</a></li>
+        <li><a asp-action="FaleConosco">Fale Conosco</a></li>
+
+    </ul>
+
+    <center>
+    <h2 class="text">Informe o novo Pacote</h2>
+    </center>
+    
+
+<center>
+    <div class="pacotes">
+        <br><br><br>
+    <form method="Post">
+
+        <label class="cadastro">Nome do pacote:</label>
+        <input type="text" asp-for="Nome"  required>
+        <br><br>
+
+        <label class="cadastro">Origem:</label>
+        <input type="text" asp-for="Origem" required />
+        <br><br>
+
+        <label class="cadastro">Destino do pacote:</label>
+        <input type="text" asp-for="Destino" required />
+        <br><br>
+
+        <label class="cadastro">Atrativos:</label>
+        <input type="text" asp-for="Atrativos" required />
+        <br><br>
+
+        <label class="cadastro">Saída:</label>
+        <input type="date" asp-for="Saida" required />
+        <br><br>
+
+        <label class="cadastro">Retorno:</label>
+        <input type="date" asp-for="Retorno" required />
+        <br><br><br><br><br>
+
+        
+
+        <button class="login3">Enviar</button>
+
+    </form>
+    </div>
+</center>
+<br><br>
+</body>
+<br><br><br><br>

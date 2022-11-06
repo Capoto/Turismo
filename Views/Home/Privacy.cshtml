@@ -1,0 +1,10 @@
+﻿@model List<Usuario>
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+@foreach (Usuario user in Model)
+{
+    <p>@user.Nome</p>
+}

@@ -1,0 +1,49 @@
+@model List<PacotesTuristicos>
+<body class="vitrine">
+
+    <ul>
+
+        <li><a  asp-action="AdminIndex">Home Admin</a></li>
+        <li><a asp-action="PacotesCadastrados">Pacotes Cadastrados</a></li>
+        <li><a asp-action="EditaPacotes">Edição de pacotes</a></li>
+        <li><a asp-action="CadastraPacotes">Exclusão de viagens</a></li>
+        <li><a asp-action="MenssagensRecebidas">Mensagems Recebidas</a></li>
+
+    </ul>
+
+    <center><h2 class="text">Pacotes Cadastrados</h2></center>
+    
+    <center>
+        <table>       
+            <thead>
+                <tr>
+                    <th>Nome</th>    
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Atrativos</th>
+                    <th>Saida</th>
+                    <th>Retorno</th>
+                    <th>Usuario</th>
+
+                </tr>
+            </thead>
+        
+        @foreach(PacotesTuristicos pacotes in Model){
+
+        
+            <tbody>
+            <tr>
+                <td>@pacotes.Nome</td>
+                <td>@pacotes.Origem</td>
+                <td>@pacotes.Destino</td>
+                <td>@pacotes.Atrativos</td>
+                <td>@pacotes.Saida</td>
+                <td>@pacotes.Retorno</td>
+                <td>@pacotes.Usuario</td>
+            </tr>
+            </tbody>
+        
+    }</table>
+    </center>
+    <br><br><br><br>
+</body>

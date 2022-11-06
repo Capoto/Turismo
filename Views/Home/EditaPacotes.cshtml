@@ -1,0 +1,57 @@
+@model List<PacotesTuristicos>
+@using Microsoft.AspNetCore.Http
+
+<body class="vitrine">
+    <ul>
+
+        <li><a  asp-action="AdminIndex">Home Admin</a></li>
+        <li><a asp-action="PacotesCadastrados">Pacotes Cadastrados</a></li>
+        <li><a asp-action="EditaPacotes">Edição de pacotes</a></li>
+        <li><a asp-action="ExcluirPacotes">Exclusão de viagens</a></li>
+        <li><a asp-action="MenssagensRecebidas">Mensagems Recebidas</a></li>
+
+    </ul>
+<center><h2 class="text">Edita Pacotes</h2></center>
+
+<center>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Nome</th>
+                <th>Origem</th>
+                <th>Destino</th>
+                <th>Atrativos</th>
+                <th>Saida</th>
+                <th>Retorno</th>
+                <th>Usuario</th>
+                <th>Editar mensagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @foreach(PacotesTuristicos pacotes in Model){
+                @using (Html.BeginForm("MudaPacotes", "Home", new {id = pacotes.Id}))
+{
+                
+                <tr>
+                    <form method="Post">
+                       
+                    <td>@pacotes.Nome</td>
+                    <td>@pacotes.Origem</td>
+                    <td>@pacotes.Destino</td>
+                    <td>@pacotes.Atrativos</td>
+                    <td>@pacotes.Saida</td>
+                    <td>@pacotes.Retorno</td>
+                    <td>@pacotes.Usuario</td>
+                    <td><button class="mess"><a class="fale">Editar</a></button></td>
+                    </form>
+                </tr>
+}
+            }
+            
+        </tbody>
+    </table>
+</center>
+</body>
+<br><br><br><br>

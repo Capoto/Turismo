@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "d7ynfl3qaaXt/ZsDnRHWG8HY7Thj7X1qSJw2tjlT+UmdjN9jRPA6edEQiPi+VvOC0q7q2Y4FD0FvTkg+/VTy0Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gomes\\Documents\\Downloads\\Entrega\\Turismo\\Turismo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gomes\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512",
+    "C:\\Users\\gomes\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

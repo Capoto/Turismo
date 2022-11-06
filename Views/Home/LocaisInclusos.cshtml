@@ -1,0 +1,64 @@
+<body onLoad="passa1()" class="vitrine">
+
+    <ul>
+
+        <li><a  asp-action="DestinoCerto">Destino Certo</a></li>
+        <li><a asp-action="DescricaoPacotes">Descrição dos Pacotes</a></li>
+        <li><a asp-action="LocaisInclusos">Locais inclusos</a></li>
+        <li><a asp-action="CadastraPacotes">Realizar Reserva</a></li>
+        <li><a asp-action="FaleConosco">Fale Conosco</a></li>
+
+    </ul>
+    <img src="~/images.png" class="airplane" />
+    <img src="~/images.png" class="airplane2" />
+    <center><h2 class="text">Natal</h2></center>
+    <center>
+        <img  id="Natal1" height="350px" width="450px" />
+        </center>
+    <center><p class="organize">Natal é uma cidade repleta de praias paradisíacas, perfeitas para passeios, um relaxante banho de mar e, até mesmo, praticar mergulho. A mais famosa e badalada de todas é Ponta Negra, além de linda, oferece excelente infraestrutura e nela está o cartão-postal local — o Morro do Careca.</p></center>
+    <center><h2 class="text">Maceío</h2></center>
+    <center>
+        <img  id="Maceio" height="350px" width="450px" />
+        </center>
+    <center><p class="organize">As praias são lindas, com águas transparentes, cheias de piscinas naturais e muita oportunidade de descanso e diversão. Em Maceió não tem lugar feio, as praias urbanas são tão bonitas quanto as mais afastadas, fica a critério do turista escolher sua preferida.</p></center>
+    <center><h2 class="text">Aracaju</h2></center>
+     <center>
+        <img  id="Aracaju" height="350px" width="450px" />
+        </center>
+    <center><p class="organize">Quem visita Aracaju se surpreende com a Orla de Atalaia, que, sem dúvida, é o principal cartão postal da cidade. Para alguns, é a orla mais bonita do Brasil. Trata-se de um imenso calçadão de 4 km às margens da Praia da Atalaia e do bairro de mesmo nome.</p></center>
+    
+    <br><br><br><br>
+</body>
+<script>
+
+function passa1(){
+
+document.getElementById("Natal1").src="../Natal.jpeg";
+document.getElementById("Maceio").src="../Maceio1.jpg";
+document.getElementById("Aracaju").src="../Aracaju.jpg";
+setTimeout("passa2()", 5000)
+
+
+}
+
+function passa2(){
+
+document.getElementById('Natal1').src="../Natal22.jpg";
+document.getElementById("Maceio").src="../Maceio2.jpg";
+document.getElementById("Aracaju").src="../Aracaju2.jpg";
+setTimeout("passa3()", 5000)
+
+
+}
+
+function passa3(){
+
+document.getElementById('Natal1').src="../Natal4.jpg";
+document.getElementById("Maceio").src="../Maceio3.jpg";
+document.getElementById("Aracaju").src="../Aracaju3.jpg";
+setTimeout("passa1()", 5000)
+
+
+}
+
+</script>

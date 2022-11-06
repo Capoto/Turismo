@@ -1,0 +1,40 @@
+@model Usuario
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+<body class="vitrine">
+    <ul>
+        <li class="index"><a  asp-action="Index">Destino Certo</a></li>
+        <li class="index"><a asp-action="DescricaoPacotes2">Descrição dos Pacotes</a></li>
+        <li class="index"><a asp-action="LocaisInclusos2">Locais inclusos</a></li>
+        <li class="index"><a asp-action="Pacotes">Pacotes</a></li>
+        <li class="index"><a asp-action="Registrar">Registrar</a></li>
+        <li class="index"><a asp-action="Login">Login</a></li>
+        
+    </ul>
+<center>
+    <br><br><br><br><br><br>
+    <div class="login">
+        <br><h2>Sign in</h2>
+        <form method="Post">
+            
+            <label>Login:</label>        
+            <input type="text" asp-for="Login" required></input>
+            <br><br>
+
+            <label>Senha:</label>
+            <input type="password" asp-for="Senha" required></input>
+            <br><br><br>
+
+            <button class="login">Login</button>
+            <a class="space" asp-action="Registrar">Cadastrar</a>
+
+        </form>
+    <br><br>
+    <p class="hei">@ViewBag.Mensagem</p>
+    </div>
+</center>
+<br><br><br>
+</body>
+}

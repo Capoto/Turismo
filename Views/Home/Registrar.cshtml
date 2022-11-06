@@ -1,0 +1,50 @@
+@model Usuario
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<body class="vitrine">
+<ul>
+        <li class="index"><a  asp-action="Index">Destino Certo</a></li>
+        <li class="index"><a asp-action="DescricaoPacotes2">Descrição dos Pacotes</a></li>
+        <li class="index"><a asp-action="LocaisInclusos2">Locais inclusos</a></li>
+        <li class="index"><a asp-action="Pacotes">Pacotes</a></li>
+        <li class="index"><a asp-action="Registrar">Registrar</a></li>
+        <li class="index"><a asp-action="Login">Login</a></li>
+       
+</ul>
+
+<center>
+<br><br><br><br>
+
+<div class="index">
+
+   <form method='Post'>
+        <br><h2>Registrar</h2>
+        <label class="index">Nome:</label>
+        <input type="text" asp-for="Nome" required></input>
+        
+        <br><br>
+
+        <label class="index">Login:</label>
+        <input type="text" asp-for="Login" required></input>
+        <br><br>
+
+        <label class="index">Senha:</label>
+        <input type="password" asp-for="Senha"></input>
+        <br><br>
+        
+        <label class="index">Nascimento:</label>
+        <input type="text" asp-for="DataNascimento"></input>
+        <br><br><br>
+
+        <button class="login">Registrar</button>
+
+        <a class="space2" asp-action="Login">Login</a>
+
+
+    </form>
+</div>
+</center>
+</body>
+<br><br>

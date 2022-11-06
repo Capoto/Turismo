@@ -1,0 +1,55 @@
+@model List<FaleConosco>
+@using Microsoft.AspNetCore.Http
+
+<body class="vitrine">
+    <ul>
+
+      
+        <li><a  asp-action="DestinoCerto">Destino Certo</a></li>
+        <li><a asp-action="CadastraPacotes">Cadastrar Pacote</a></li>
+        <li><a asp-action="EditaPacotes2">Edita Pacotes</a></li>
+        <li><a asp-action="ExcluirPacotes2">Excluir inclusos</a></li>
+        <li><a asp-action="FaleConosco">Fale Conosco</a></li>
+
+    </ul>
+
+    </ul>
+<center><h2 class="text">Mensagems</h2></center>
+
+<center>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Nome</th>
+                <th>Mensagem</th>
+                <th>Email</th>
+                <th>UsuarioId</th>
+                <th>Apagar mensagem</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            @foreach(FaleConosco fale in Model){
+                @using (Html.BeginForm("MenssagensRecebidas", "Home", new {id = fale.Id}))
+{
+                
+                <tr>
+                    <form method="Post">
+                       
+                    <td>@fale.Nome</td>
+                    <td>@fale.Mensagem</td>
+                    <td>@fale.Email</td>
+                    <td>@fale.UsuarioId</td>
+                    <td><button class="mess"><a class="fale">Apagar</a></button></td>
+                    </form>
+                </tr>
+}
+            }
+            
+        </tbody>
+    </table>
+</center>
+<br><br><br><br>
+</body>
+<br><br><br><br>
